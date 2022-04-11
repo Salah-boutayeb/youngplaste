@@ -10,16 +10,30 @@
       href="assets/img/fav-icon.png"
       type="image/x-icon"
     />
-
     <!--=============== REMIX ICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-<!-- ttt -->
+    <!-- ttt -->
     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/cardSlider.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gMqTGLOkvlujF2E8q");
+      })();
+    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <title>YOUNG PLASTE</title>
   </head>
 
@@ -47,6 +61,9 @@
             </li>
             <li class="nav__item">
               <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonial" class="nav__link">Temoignages</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contactez-nous</a>
@@ -194,7 +211,7 @@
       </section>
 
       <!--==================== Members ====================-->
-      <section class="member section container" id="Members">
+      <!-- <section class="member section container" id="Members">
         <h2 class="section__title-center">Membres</h2>
 
         <p class="member__description">
@@ -311,7 +328,6 @@
 
             <img src="assets/img/anass.png" alt="" class="member__img" />
 
-
             <h3 class="member__title">Mohamed-anas EL HAMDANI</h3>
             <span class="member__price"><br /></span>
 
@@ -324,8 +340,142 @@
             </a>
           </article>
         </div>
-      </section>
+      </section> -->
+      <!--  menmber slider  -->
+      <section class="member section container" id="Members">
+        <h2 class="section__title-center">Membres</h2>
 
+        <p class="member__description">
+          YOUNG PLASTE possédera une équipe cohérente, connue par la discipline
+          de ses membres et leur esprit d’équipe accumulé au cours de leur
+          cursus scolaire, universitaire et notamment professionnelle.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/youness.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Youness RAFYA</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/youness-rafya-a4ab031bb">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/hajar.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Hajar SIKAL</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/hajar-sikal-0309841a4">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/azzeddine.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Azzeddine CALLAF</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/azzeddine-callaf">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/mohamed.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Mohamed LAHARRAF</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/laharraf-mohamed/">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/fadwa.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Fadwa GUISSER</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/fadwa-guisser-27aa2a215">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/salah.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Salah eddine BOUTAYEB</h3>
+              <span class="member__price"><br /></span>
+
+              <a
+                href="https://www.linkedin.com/in/salah-eddine-boutayeb-3b8841176"
+              >
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/hajar1.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Hajar BAKHCHENI</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/hajar-bakhcheni-60aa231a3">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/anass.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Med-Anas EL HAMDANI</h3>
+              <span class="member__price"><br /></span>
+
+              <a
+                href="https://www.linkedin.com/in/mohamed-anas-el-hamdani-1a00691b8"
+              >
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!--==================== QUESTIONS ====================-->
       <section class="questions section" id="faqs">
         <h2 class="section__title-center questions__title container">
@@ -334,7 +484,7 @@
 
         <div class="questions__container container grid">
           <div class="questions__group">
-            <div class="questions__item">
+            <div class="questions__item accordion-open">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
                 <h3 class="questions__item-title">
@@ -342,7 +492,7 @@
                 </h3>
               </header>
 
-              <div class="questions__content">
+              <div class="questions__content" style="height: 92px">
                 <p class="questions__description">
                   Youngplaste est une start-up qui a pour activité le traitement
                   & Recyclage des dechets en plastique.
@@ -372,7 +522,7 @@
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
                 <h3 class="questions__item-title">
-                  Pourquoi le recyclage est deterimanrt pour l’environnement ?
+                  Pourquoi le recyclage est deterimant pour l’environnement ?
                 </h3>
               </header>
 
@@ -413,6 +563,66 @@
           </div>
         </div>
       </section>
+      <section class="member section container" id="testimonial">
+        <h2 class="section__title-center">Testimonials</h2>
+
+        <p class="member__description"></p>
+
+        <!-- Slider main container -->
+        <div class="content">
+          <div class="steps__container grid">
+            <div class="">
+              <figure class="snip1192">
+                <blockquote>
+                  Calvin: Sometimes when I'm talking with others, my words can't
+                  keep up with my thoughts. I wonder why we think faster than we
+                  speak. Hobbes: Probably so we can think twice.
+                </blockquote>
+                <div class="author">
+                  <img
+                    src="./assets/img/Mohamed LAHARRAF.png"
+                    alt="sq-sample1"
+                  />
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+            <div class="">
+              <figure class="snip1192 hover">
+                <blockquote>
+                  Thank you. before I begin, I'd like everyone to notice that my
+                  report is in a professional, clear plastic binder...When a
+                  report looks this good, you know it'll get an A. That's a tip
+                  kids. Write it down.
+                </blockquote>
+                <div class="author">
+                  <img
+                    src="./assets/img/Mohamed LAHARRAF.png"
+                    alt="sq-sample24"
+                  />
+                  <h5>Max Conversion<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+            <div class="">
+              <figure class="snip1192">
+                <blockquote>
+                  My behaviour is addictive functioning in a disease process of
+                  toxic co-dependency. I need holistic healing and wellness
+                  before I'll accept any responsibility for my actions.
+                </blockquote>
+                <div class="author">
+                  <img
+                    src="./assets/img/Mohamed LAHARRAF.png"
+                    alt="sq-sample29"
+                  />
+                  <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== CONTACT ====================-->
       <section class="contact section container" id="contact">
@@ -439,30 +649,46 @@
               </div>
             </div>
           </div>
+          <!-- emailjs -->
 
-          <form action="" class="contact__form">
+          <!-- end -->
+          <form class="contact__form" method="post">
             <div class="contact__inputs">
               <div class="contact__content">
-                <input type="email" placeholder=" " class="contact__input" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                  class="contact__input email"
+                />
                 <label for="" class="contact__label">Email</label>
               </div>
 
               <div class="contact__content">
-                <input type="text" placeholder=" " class="contact__input" />
-                <label for="" class="contact__label">Subject</label>
+                <input
+                  type="name"
+                  name="name"
+                  placeholder=" "
+                  class="contact__input name"
+                />
+                <label for="" class="contact__label">Nom</label>
               </div>
 
               <div class="contact__content contact__area">
                 <textarea
                   name="message"
                   placeholder=" "
-                  class="contact__input"
+                  class="message contact__input"
                 ></textarea>
                 <label for="" class="contact__label">Message</label>
               </div>
             </div>
 
-            <button class="button button--flex">
+            <button
+              class="submit button button--flex"
+              name="submit"
+              type="submit"
+            >
               Send Message
               <i class="ri-arrow-right-up-line button__icon"></i>
             </button>
@@ -473,6 +699,46 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="nav__logo footer__logo"> Young PLASTE </a>
+
+          <h3 class="footer__title">
+            Subscribe to our newsletter <br />
+            to stay update
+          </h3>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Address</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">1234 - Peru</li>
+            <li class="footer__information">La Libertad - 43210</li>
+            <li class="footer__information">123-456-789</li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact Us</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">+999 888 777</li>
+
+            <div class="footer__social">
+              <a href="https://www.facebook.com/" class="footer__social-link">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://twitter.com/" class="footer__social-link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
       <p class="footer__copy">&#169; youngplaste. All rigths reserved</p>
       <div class="footer__container container grid"></div>
     </footer>
@@ -487,5 +753,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/cradSlider.js"></script>
+    <!-- Compiled and minified JavaScript -->
   </body>
 </html>
