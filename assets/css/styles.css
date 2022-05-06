@@ -424,8 +424,9 @@ the website, in dark theme
 }
 
 .about__img {
-  width: 280px;
+  width: 320px;
   justify-self: center;
+  border-radius: 1rem;
 }
 
 .about__title {
@@ -769,7 +770,7 @@ the website, in dark theme
 }
 
 .footer__logo:hover {
-  color: var(--first-color);
+  color: var(--body-color);
 }
 
 .footer__title {
@@ -805,16 +806,18 @@ the website, in dark theme
 
 .footer__information {
   font-size: var(--small-font-size);
+  color: #f7f7f7;
 }
 
 .footer__social {
   display: inline-flex;
   column-gap: 0.75rem;
+  color: #f7f7f7;
 }
 
 .footer__social-link {
   font-size: 1rem;
-  color: var(--text-color);
+  color: #f7f7f7;
   transition: 0.3s;
 }
 

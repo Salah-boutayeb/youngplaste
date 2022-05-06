@@ -170,11 +170,17 @@ function validate() {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     if (name.value == "" || email.value == "" || msg.value == "") {
-      alert("please fill the fields");
+      new jBox("Notice", {
+        content: "please fill the fields",
+        color: "red",
+      });
     } else {
       let message = name.value + "\n" + msg.value;
       sendmail(email.value, message);
-      alert("great your email has been sent successfully");
+      new jBox("Notice", {
+        content: "great your email has been sent successfully",
+        color: "blue",
+      });
     }
   });
 }
